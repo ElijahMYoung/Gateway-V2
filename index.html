@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Cheesecake Moonbase Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!--Navbar-->
+  <body>
+    <div class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="Images/moon_cheese_2566.webp" alt="Cheese Wheel Moon" />
+        </a>
+        <div class="nav-links" id="navLinks">
+          <img
+            src="https://www.freeiconspng.com/uploads/black-circle-close-button-png-5.png"
+            alt="circle close button icon"
+            class="sidebtn"
+            onclick="hideMenu()"
+          />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <img
+          src="https://static.thenounproject.com/png/4619355-200.png"
+          alt="menu bars icon"
+          class="sidebtn"
+          onclick="showMenu()"
+        />
+      </nav>
+
+      <div class="text-box">
+        <h1>Cheesecake Moonbase</h1>
+        <p>Everyone knows the moon is made out of cheese...cake</p>
+        <a href="about.html" class="herobtn">Check out our story!</a>
+      </div>
+    </div>
+
+    <!-- Javascript used to toggle the menu icon for mobile use-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <!-- Footer-->
+    <footer id="media">
+      <link rel="stylesheet" href="style.css" />
+      <a href="https://www.instagram.com/" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+          alt="Instagram Logo"
+          style="width: 50px; height: 50px"
+        />
+      </a>
+
+      <a href="https://www.facebook.com/" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"
+          alt="Facebook Logo"
+          style="width: 50px; height: 50px"
+        />
+      </a>
+
+      <a href="https://www.yelp.com/" target="_blank">
+        <img
+          src="https://drjamestalkington.com/wp-content/uploads/2021/02/yelp-logo-png-round-8-copy.png"
+          alt="Yelp Logo"
+          style="width: 50px; height: 50px"
+        />
+      </a>
+
+      <a href="https://twitter.com/?lang=en" target="_blank">
+        <img
+          src="https://pnggrid.com/wp-content/uploads/2021/07/Twitter-Logo-Square.png"
+          alt="Twitter Logo"
+          style="width: 50px; height: 50px"
+        />
+      </a>
+    </footer>
+  </body>
+</html>
