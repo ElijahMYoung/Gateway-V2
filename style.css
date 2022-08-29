@@ -1,0 +1,324 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Kanit", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Nav Bar */
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(75, 108, 183, 0.5),
+      rgba(24, 40, 72, 0.8)
+    ),
+    url(Images/Cheesecake.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 150px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #09172a;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+
+  /* Home Page */
+}
+.text-box {
+  width: 90%;
+  color: whitesmoke;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box {
+  font-size: 62px;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: whitesmoke;
+}
+/* Hero Button */
+.herobtn {
+  display: inline-block;
+  text-decoration: none;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.herobtn:hover {
+  border: 1px solid #18355d;
+  background: #18355d;
+  transition: 0.5s;
+}
+
+/* Mobile Functionality */
+nav .sidebtn {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .text-box {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    background: #18355d;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .sidebtn {
+    display: block;
+    margin: 10px;
+    width: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #09172a;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+footer img {
+  border: 2px;
+  border-radius: 15px;
+}
+
+/* About Us Page */
+
+.sub-header {
+  height: 30%;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(75, 108, 183, 0.5),
+      rgba(24, 40, 72, 0.8)
+    ),
+    url(Images/cheesecake-stock.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.sub-header {
+  margin-top: 0;
+}
+
+.aboutbody {
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+.about-us {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.about-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+.about-col img {
+  width: 100%;
+}
+.about-col {
+  padding-top: 0;
+}
+
+.about-col p {
+  padding: 15px 0 25px;
+}
+.bluebtn {
+  border: 1px solid #18355d;
+  background: transparent;
+  color: #18355d;
+}
+
+.bluebtn:hover {
+  color: whitesmoke;
+}
+
+/* Contact Page */
+.contactbody {
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+.contact-us {
+  width: 80%;
+  margin: auto;
+}
+
+.contact-col {
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+
+.contact-col div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact-col div p {
+  padding: 0;
+}
+
+.contact-col div {
+  font-size: 25px;
+  margin-bottom: 5px;
+  color: #18355d;
+  font-weight: 400;
+}
+
+.contact-col input,
+.contact-col textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #18355d;
+}
+
+.contact-header {
+  height: 30%;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(75, 108, 183, 0.5),
+      rgba(24, 40, 72, 0.8)
+    ),
+    url(Images/cheesecake-display.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.contact-header h1 {
+  margin-top: 0px;
+}
+
+/* Menu Page */
+
+.menuheader {
+  height: 30%;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(75, 108, 183, 0.5),
+      rgba(24, 40, 72, 0.8)
+    ),
+    url(Images/cheesecake-display.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.menu img {
+  width: 200px;
+  height: 200px;
+}
+
+.menu .item {
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  background: whitesmoke;
+}
+
+.menu ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 4px 8px;
+  position: relative;
+  max-width: 400px;
+  min-width: 400px;
+}
+.menubody {
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+.menuheader h1 {
+  margin-top: 0px;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="menubody">
+    <!--Navbar-->
+    <div class="menuheader">
+      <nav>
+        <a href="index.html"
+          ><img src="Images/moon_cheese_2566.webp" alt="Cheese Wheel Moon" />
+        </a>
+        <div class="nav-links" id="navLinks">
+          <img
+            src="https://www.freeiconspng.com/uploads/black-circle-close-button-png-5.png"
+            alt="circle close button icon"
+            class="sidebtn"
+            onclick="hideMenu()"
+          />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <img
+          src="https://static.thenounproject.com/png/4619355-200.png"
+          alt="menu bars icon"
+          class="sidebtn"
+          onclick="showMenu()"
+        />
+      </nav>
+      <h1>Browse Our Options!</h1>
+    </div>
+
+    <section class="menu">
+      <ul>
+        <li class="item">
+          <img src="Images/cheesecake-classic.jpg" alt="Plain Cheesecake" />
+          <h3>Classic Mooncheesecake</h3>
+          <p>
+            Pure cheesecake cut right from the moon's surface and delivered
+            straight to your stomach!
+          </p>
+        </li>
+        <li class="item">
+          <img src="Images/chocolate.jpeg" alt="Chocolate Cheesecake" />
+          <h3>Chocolate</h3>
+          <p>
+            Gently rich milk chocolategarunteed to satisfy your sweet tooth!
+          </p>
+        </li>
+        <li class="item">
+          <img src="Images/Japanese-Cheesecake.jpg" alt="Japanese Cheesecake" />
+          <h3>Japanese</h3>
+          <p>
+            A light and fluffy cheesecake that is inspired by the Japanese
+            style.
+          </p>
+        </li>
+        <li class="item">
+          <img src="Images/Matcha.jpg" alt="Matcha Cheesecake" />
+          <h3>Matcha</h3>
+          <p>
+            Flavored with notes of matcha powdered green tea, a perfect addition
+            to your morning tea!
+          </p>
+        </li>
+        <li class="item">
+          <img src="Images/ny-style.jpg" alt="New York Style Cheesecake" />
+          <h3>New York Style</h3>
+          <p>
+            A creamier style cheesecake topped with fresh Earth-grown
+            strawberries.
+          </p>
+        </li>
+        <li class="item">
+          <img src="Images/Blackberry.jpg" alt="Blackberry Cheesecake" />
+          <h3>Blackberry</h3>
+          <p>
+            Our Classic Mooncheesecake topped with delicious blackberries and
+            blackberry sauce.
+          </p>
+        </li>
+        <li class="item">
+          <img src="Images/redvelvet.jpg" alt="Red Velvet Cheesecake" />
+          <h3>Red Velvet</h3>
+          <p>
+            Our classic Mooncheesecake with a red velvet crust and a thin red
+            velvet layer.
+          </p>
+        </li>
+        <li class="item">
+          <img src="Images/blueberry.jpg" alt="Blueberry Cheesecake" />
+          <h3>Blueberry</h3>
+          <p>
+            Our Classic Mooncheesecake topped with delicious blueberries and
+            blueberry sauce.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Javascript used to toggle the menu icon for mobile use-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <!-- Footer-->
+    <footer id="media">
+      <link rel="stylesheet" href="style.css" />
+      <a href="https://www.instagram.com/" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+          alt="Instagram Logo"
+          style="width: 50px; height: 50px"
+        />
+      </a>
+
+      <a href="https://www.facebook.com/" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"
+          alt="Facebook Logo"
+          style="width: 50px; height: 50px"
+        />
+      </a>
+
+      <a href="https://www.yelp.com/" target="_blank">
+        <img
+          src="https://drjamestalkington.com/wp-content/uploads/2021/02/yelp-logo-png-round-8-copy.png"
+          alt="Yelp Logo"
+          style="width: 50px; height: 50px"
+        />
+      </a>
+
+      <a href="https://twitter.com/?lang=en" target="_blank">
+        <img
+          src="https://pnggrid.com/wp-content/uploads/2021/07/Twitter-Logo-Square.png"
+          alt="Twitter Logo"
+          style="width: 50px; height: 50px"
+        />
+      </a>
+    </footer>
+  </body>
+</html>

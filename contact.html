@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="contactbody">
+    <!--Navbar-->
+    <div class="contact-header">
+      <nav>
+        <a href="index.html"
+          ><img src="Images/moon_cheese_2566.webp" alt="Cheese Wheel Moon" />
+        </a>
+        <div class="nav-links" id="navLinks">
+          <img
+            src="https://www.freeiconspng.com/uploads/black-circle-close-button-png-5.png"
+            alt="circle close button icon"
+            class="sidebtn"
+            onclick="hideMenu()"
+          />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <img
+          src="https://static.thenounproject.com/png/4619355-200.png"
+          alt="menu bars icon"
+          class="sidebtn"
+          onclick="showMenu()"
+        />
+      </nav>
+      <h1>Contact Us!</h1>
+    </div>
+
+    <!--Contact Section-->
+
+    <div class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <h5>1234 Moonbase Road</h5>
+            <p>Charlotte, NC 28262</p>
+          </div>
+          <div>
+            <h5>(###)###-####</h5>
+            <p>We take calls during our open hours! (Mon-Sun 9am-9pm)</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-col">
+        <form>
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email Address" required />
+          <input type="text" placeholder="Subject" required />
+          <textarea rows="8" placeholder="Message" required> </textarea>
+          <button type="submit" class="herobtn bluebtn">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Javascript used to toggle the menu icon for mobile use-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    <br />
+    <br />
+
+    <!-- Footer-->
+    <footer id="media">
+      <link rel="stylesheet" href="style.css" />
+      <a href="https://www.instagram.com/" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+          alt="Instagram Logo"
+          style="width: 50px; height: 50px"
+        />
+      </a>
+
+      <a href="https://www.facebook.com/" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"
+          alt="Facebook Logo"
+          style="width: 50px; height: 50px"
+        />
+      </a>
+
+      <a href="https://www.yelp.com/" target="_blank">
+        <img
+          src="https://drjamestalkington.com/wp-content/uploads/2021/02/yelp-logo-png-round-8-copy.png"
+          alt="Yelp Logo"
+          style="width: 50px; height: 50px"
+        />
+      </a>
+
+      <a href="https://twitter.com/?lang=en" target="_blank">
+        <img
+          src="https://pnggrid.com/wp-content/uploads/2021/07/Twitter-Logo-Square.png"
+          alt="Twitter Logo"
+          style="width: 50px; height: 50px"
+        />
+      </a>
+    </footer>
+  </body>
+</html>
