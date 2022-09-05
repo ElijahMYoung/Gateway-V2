@@ -263,8 +263,8 @@ footer img {
   color: whitesmoke;
 }
 
-.contact-header h1 {
-  margin-top: 0px;
+h1 {
+  margin-top: 0;
 }
 
 /* Menu Page */
@@ -317,8 +317,4 @@ footer img {
 }
 .menubody {
   background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-}
-
-.menuheader h1 {
-  margin-top: 0px;
 }
